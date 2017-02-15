@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+
+<hibernate-configuration>  
+    <session-factory>  
+        <property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>  
+        <property name="hibernate.connection.username">root</property>  
+        <property name="hibernate.connection.password">root</property>  
+        <property name="hibernate.connection.url">jdbc:mysql://localhost/web_collector</property>  
+        <property name="hibernate.dialect">org.hibernate.dialect.MySQLInnoDBDialect</property>  
+        <property name="show_sql">true</property>   
+        <property name="connection.pool_size">1</property>  
+          
+        <mapping class="com.hib.entities.Student"></mapping>  
+  
+    </session-factory>  
+</hibernate-configuration> 
+
+<!--<persistence version="1.0" xmlns="http://java.sun.com/xml/ns/persistence"> 
+    <persistence-unit name="lojavirtualDB"> 
+        <provider>org.hibernate.ejb.HibernatePersistence</provider> 
+        <class>entities.Produto</class> 
+        <properties> 
+            <property name="hibernate.dialect" value="org.hibernate.dialect.MySQLDialect" /> 
+            <property name="hibernate.hbm2ddl.auto" value="update" /> 
+            <property name="hibernate.show_sql" value="true" /> 
+            <property name="hibernate.format_sql" value="true" />  
+            <property name="javax.persistence.jdbc.driver" value="com.mysql.jdbc.Driver" /> 
+            <property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost/web_collector" /> 
+            <property name="javax.persistence.jdbc.user" value="root" /> 
+            <property name="javax.persistence.jdbc.password" value="root" /> 
+        </properties> 
+    </persistence-unit> 
+</persistence>-->
